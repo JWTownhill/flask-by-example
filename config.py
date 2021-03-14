@@ -23,7 +23,7 @@ class StagingConfig(Config):
 class DevelopmentConfig(Config):
     DEVELOPMENT = True
     DEBUG = True
-
+    OBJC_DISABLE_INITIALIZE_FORK_SAFETY="YES"
 
 class TestingConfig(Config):
     TESTING = True
