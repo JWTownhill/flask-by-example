@@ -28,7 +28,7 @@ def index():
             r = requests.get(url)
         except:
             errors.append(
-                "Unable to get URL. Please make sure it's valid and try again."
+                "Unable to get URL. Make sure it's valid and try again. The full url including http or https is needed."
             )
             return render_template("index.html", errors=errors)
         if r:
